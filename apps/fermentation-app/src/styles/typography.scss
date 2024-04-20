@@ -1,0 +1,103 @@
+p,
+.body-1 {
+  font-family: 'Neue Haas Unica Pro', helvetica, arial, sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.5px;
+}
+
+.body-2 {
+  font-family: 'Neue Haas Unica Pro', helvetica, arial, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.5px;
+}
+
+h1 {
+  font-family: 'La Mer Headline', helvetica, arial, sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'La Mer Headline', helvetica, arial, sans-serif;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+h2.desktop-h1 {
+  font-family: 'La Mer Headline', helvetica, arial, sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'La Mer Headline', helvetica, arial, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 116% */
+  text-transform: capitalize;
+}
+
+h4 {
+  font-family: 'La Mer Text', helvetica, arial, sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+button.small {
+  font-family: 'Neue Haas Unica Pro', helvetica, arial, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 11px;
+  letter-spacing: 0.55px;
+  text-transform: uppercase;
+}
+
+.dark-background {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-family: 'La Mer Headline', helvetica, arial, sans-serif;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    text-transform: uppercase;
+  }
+
+  h2,
+  h2.desktop-h1 {
+    font-family: 'La Mer Headline', helvetica, arial, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    font-family: 'La Mer Text', helvetica, arial, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
