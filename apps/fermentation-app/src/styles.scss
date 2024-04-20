@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@use './styles/index.scss';
+
+html {
+  height: 100dvh;
+  width: 100dvw;
+  font-size: 62.5%;
+  overflow: hidden auto;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.terms-text {
+  color: inherit;
+  padding: 0 1.5px;
+}
