@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@fermentation-app/charts": ["libs/web/charts/src/index.ts"],
       "@fermentation-app/landing": ["libs/web/landing/src/index.ts"]
     }
   },
