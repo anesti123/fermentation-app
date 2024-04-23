@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+@import 'apps/fermentation-app/src/styles/mixing.scss';
 
 .main-content {
   margin-left: 0;
@@ -27,13 +28,7 @@
 }
 
 .card-single {
-  display: flex;
-  justify-content: space-between;
-  background: #fffcf3;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
-    0 15px 40px rgba(166, 173, 201, 0.2);
+  @include card-single;
 }
 
 .card-single div:last-child span {
@@ -49,7 +44,7 @@
 .card-single:last-child h1,
 .card-single:last-child div:first-child span,
 .card-single:last-child div:last-child span {
-  color: #fff;
+  color: var(--color-dark);
 }
 
 .recent-grid {
@@ -59,12 +54,13 @@
   grid-template-columns: 65% auto;
 }
 .card {
-  background: #fff;
+  background: var(--color-white);
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
     0 15px 40px rgba(166, 173, 201, 0.2);
   padding: 1rem;
 }
+
 .card-header {
   padding: 1rem;
 }
@@ -74,14 +70,7 @@
   align-items: center;
   border-bottom: 1px solid #f0f0f0;
 }
-.card-header button {
-  background: var(--main-color);
-  border-radius: 10px;
-  color: #fff;
-  font-size: 0.8rem;
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--main-color);
-}
+
 table {
   border-collapse: collapse;
 }
@@ -186,6 +175,7 @@ td .status {
     margin-left: 0rem;
   }
 }
+
 @media only screen and (max-width: 560px) {
   .cards {
     grid-template-columns: 100%;
