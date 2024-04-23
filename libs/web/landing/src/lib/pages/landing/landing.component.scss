@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
-:root {
-  --main-color: #11101d;
-  --color-dark: #1d2231;
-  --text-grey: #8390a2;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -15,9 +9,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.main-content {
-  transition: margin-left 300ms;
-}
 header {
   background: #fff;
   display: flex;

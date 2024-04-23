@@ -20,7 +20,6 @@ export class FermentationDataService {
       .get<any[]>(this.apiUrl)
       .pipe(
         map((response) => {
-          // Process response data if needed
           return response;
         }),
         catchError((error) => {
@@ -29,7 +28,7 @@ export class FermentationDataService {
         })
       )
       .subscribe((data) => {
-        this.cachedData = data; // Cache the fetched data
+        this.cachedData = data;
         this.cachedDataSubject.next(data);
       });
   }
