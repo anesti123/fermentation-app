@@ -13,9 +13,9 @@
       display: flex;
       height: auto;
       justify-content: center;
-      animation: pulse-fade-in 2s ease-in-out alternate forwards;
+      animation: pulse-fade-in 1.5s ease-in-out alternate forwards;
       opacity: 0;
-      animation-delay: 2s;
+      animation-delay: 1.5s;
     }
   }
 }
@@ -29,6 +29,9 @@
 
 .card-single {
   @include card-single;
+  opacity: 0;
+  animation: fade-in 2s ease-in forwards;
+  animation-delay: 2s;
 }
 
 .card-single div:last-child span {
@@ -52,6 +55,9 @@
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: 65% auto;
+  opacity: 0;
+  animation: fade-in 1s ease-in forwards;
+  animation-delay: 2.1s;
 }
 .card {
   background: var(--color-white);

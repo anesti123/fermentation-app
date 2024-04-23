@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
+import { LineChartOptions } from '../../config/line-chart-config';
 import { FermentationDataService } from '../../data-access/fermentation-data.service';
 
 @Component({
@@ -12,34 +13,7 @@ import { FermentationDataService } from '../../data-access/fermentation-data.ser
 })
 export class ChartsComponent {
   fermentationData: any[] = [];
-  chartOptions: any = {
-    animationEnabled: true,
-    theme: 'light2',
-    axisY: {
-      title: 'X Axis Label',
-      labelFontColor: '#000000',
-      lineColor: '#000000',
-      lineThickness: 0,
-      crosshair: {
-        enabled: true,
-        snapToDataPoint: true,
-      },
-    },
-    toolTip: {
-      shared: true,
-    },
-    axisY2: {
-      title: 'X Axis Label',
-      labelFontColor: '#000000',
-      lineColor: '#000000',
-      lineThickness: 0,
-      crosshair: {
-        enabled: true,
-      },
-    },
-    data: [],
-  };
-
+  chartOptions = LineChartOptions;
   constructor(private fermentationDataService: FermentationDataService) {}
 
   ngOnInit(): void {
