@@ -1,81 +1,52 @@
-p,
-.body-1 {
-  font-family: 'Neue Haas Unica Pro', helvetica, arial, sans-serif;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24.5px;
-}
-
-.body-2 {
-  font-family: 'Neue Haas Unica Pro', helvetica, arial, sans-serif;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22.5px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
 h1 {
-  font-family: 'La Mer Headline', helvetica, arial, sans-serif;
-  font-size: 50px;
+  font-family: 'Poppins', helvetica, arial, sans-serif;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 400;
   line-height: 50px;
   text-transform: uppercase;
+  color: var(--color-dark);
 }
 
 h2 {
-  font-family: 'La Mer Headline', helvetica, arial, sans-serif;
-  font-size: 38px;
+  font-family: 'Poppins', helvetica, arial, sans-serif;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 38px;
   text-transform: uppercase;
-}
-
-h2.desktop-h1 {
-  font-family: 'La Mer Headline', helvetica, arial, sans-serif;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 50px;
-  text-transform: uppercase;
+  color: var(--color-dark);
 }
 
 h3 {
-  font-family: 'La Mer Headline', helvetica, arial, sans-serif;
+  font-family: 'Poppins', helvetica, arial, sans-serif;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: 29px; /* 116% */
   text-transform: capitalize;
+  color: var(--color-dark);
 }
 
 h4 {
-  font-family: 'La Mer Text', helvetica, arial, sans-serif;
+  font-family: 'normal', helvetica, arial, sans-serif;
   font-size: 18px;
   font-style: italic;
   font-weight: 400;
   line-height: 22px;
+  color: var(--color-dark);
 }
 
-button.small {
-  font-family: 'Neue Haas Unica Pro', helvetica, arial, sans-serif;
-  font-size: 11px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 11px;
-  letter-spacing: 0.55px;
-  text-transform: uppercase;
-}
-
-.dark-background {
-  color: #fff;
+span,
+p {
+  color: var(--color-dark);
 }
 
 @media screen and (max-width: 768px) {
   h1 {
-    font-family: 'La Mer Headline', helvetica, arial, sans-serif;
+    font-family: 'Poppins', helvetica, arial, sans-serif;
     font-size: 38px;
     font-style: normal;
     font-weight: 400;
@@ -85,7 +56,7 @@ button.small {
 
   h2,
   h2.desktop-h1 {
-    font-family: 'La Mer Headline', helvetica, arial, sans-serif;
+    font-family: 'Poppins', helvetica, arial, sans-serif;
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
@@ -94,7 +65,7 @@ button.small {
   }
 
   h4 {
-    font-family: 'La Mer Text', helvetica, arial, sans-serif;
+    font-family: 'normal', helvetica, arial, sans-serif;
     font-size: 14px;
     font-style: italic;
     font-weight: 400;

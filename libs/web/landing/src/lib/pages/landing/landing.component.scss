@@ -1,91 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+.main-content {
+  margin-left: 0;
+
+  main {
+    margin-top: 85px;
+    padding: 2rem 1.5rem;
+    min-height: calc(100vh - 90px);
+
+    .graph-card {
+      display: flex;
+      height: auto;
+      justify-content: center;
+      animation: pulse-fade-in 2s ease-in-out alternate forwards;
+      opacity: 0;
+      animation-delay: 2s;
+    }
+  }
 }
 
-header {
-  background: #fff;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 1.5rem;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  width: 100%;
-  transition: left 300ms;
-}
-
-#nav-toggle {
-  display: none;
-}
-header h2 {
-  color: #222;
-}
-header label span {
-  font-size: 1.7rem;
-  padding-right: 1rem;
-}
-.search-wrapper {
-  border: solid 1px #ccc;
-  border-radius: 30px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  overflow-x: hidden;
-}
-.search-wrapper span {
-  display: inline-block;
-  padding: 0rem 1rem;
-  font-size: 1.5rem;
-}
-.search-wrapper input {
-  height: 100%;
-  padding: 0.5rem;
-  border: none;
-  outline: none;
-}
-.user-wrapper {
-  display: flex;
-  align-items: center;
-}
-.user-wrapper img {
-  border-radius: 50%;
-  margin-right: 0.5rem;
-}
-
-.user-wrapper small {
-  display: inline-block;
-  color: var(--text-grey);
-  margin-top: -1px !important;
-}
-main {
-  margin-top: 85px;
-  padding: 2rem 1.5rem;
-  background: #f1f5f9;
-  min-height: calc(100vh - 90px);
-}
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
   margin-top: 1rem;
 }
+
 .card-single {
   display: flex;
   justify-content: space-between;
-  background: #fff;
+  background: #fffcf3;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
     0 15px 40px rgba(166, 173, 201, 0.2);
 }
+
 .card-single div:last-child span {
   color: var(--main-color);
   font-size: 3rem;
@@ -206,10 +156,6 @@ td .status {
   .main-content {
     margin-left: 0;
   }
-  .main-content header {
-    width: 100%;
-    left: 0;
-  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -234,38 +180,10 @@ td .status {
   .sidebar {
     left: -100% !important;
   }
-  header h2 {
-    display: flex;
-    align-items: center;
-  }
-  header h2 label {
-    display: inline-block;
-    text-align: center;
-    background: var(--main-color);
-    padding-right: 0rem;
-    margin-right: 1rem;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center !important;
-  }
-  header h2 span {
-    text-align: center;
-    padding-right: 0rem;
-  }
-  header h2 {
-    font-size: 1.1rem;
-  }
+
   .main-content {
     width: 100%;
     margin-left: 0rem;
-  }
-  header {
-    width: 100% !important;
-    left: 0 !important;
   }
 }
 @media only screen and (max-width: 560px) {

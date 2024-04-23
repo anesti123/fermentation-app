@@ -59,9 +59,10 @@ export class ChartsComponent {
         animationEnabled: true,
         zoomEnabled: true,
         exportEnabled: true,
+        backgroundColor: '#fffcf3',
         theme: 'light2',
         axisY: {
-          title: 'sg', // Change Y Axis Label to 'sg'
+          title: 'sg',
           labelFontColor: '#000000',
           lineColor: '#000000',
           lineThickness: 0,
@@ -74,7 +75,7 @@ export class ChartsComponent {
           shared: true,
         },
         axisY2: {
-          title: 'abv', // Change Y2 Axis Label to 'abv'
+          title: 'abv',
           labelFontColor: '#000000',
           lineColor: '#000000',
           lineThickness: 0,
@@ -86,13 +87,13 @@ export class ChartsComponent {
           {
             type: 'line',
             name: 'Densities',
-            color: '#A020F0',
+            color: '#5a0f8c',
             lineThickness: 3,
             dataPoints: data.densities.map(
               (density: number, index: number) => ({
                 x: new Date(data.measuredAts[index] * 1000), // Assuming measuredAts are in seconds
                 y: density,
-                markerSize: 5, // Adjust the marker size as needed
+                markerSize: 5,
               })
             ),
           },
@@ -102,12 +103,12 @@ export class ChartsComponent {
             axisYType: 'secondary',
             markerType: 'square',
             lineThickness: 3,
-            color: '#E27429',
+            color: '#f27405',
             dataPoints: data.temperatures.map(
               (temperature: number, index: number) => ({
                 x: new Date(data.measuredAts[index] * 1000), // Assuming measuredAts are in seconds
                 y: temperature,
-                markerSize: 5, // Adjust the marker size as needed
+                markerSize: 5,
               })
             ),
           },

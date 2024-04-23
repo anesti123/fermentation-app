@@ -1,38 +1,48 @@
-.chart-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  min-width: 100vh;
-  max-width: 1200px;
+:host {
+  .chart-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    min-width: 100vh;
+    max-width: 1200px;
+
+    h4 {
+      font-style: normal;
+      border-bottom: 5px solid var(--color-dark); /* Adjust the color as needed */
+      margin-bottom: 30px;
+      padding-bottom: 10px;
+      font-weight: 800;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .chart-wrapper {
+      min-width: 80vh;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .chart-wrapper {
+      min-width: 60vh;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .chart-wrapper {
+      min-width: 40vh;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .chart-wrapper {
+      min-width: 30vh;
+    }
+  }
 }
 
 ::ng-deep {
   .canvasjs-chart-credit {
     display: none !important;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .chart-wrapper {
-    min-width: 80vh;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .chart-wrapper {
-    min-width: 60vh;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .chart-wrapper {
-    min-width: 40vh;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .chart-wrapper {
-    min-width: 30vh;
   }
 }
